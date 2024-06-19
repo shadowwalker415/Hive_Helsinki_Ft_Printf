@@ -6,7 +6,7 @@
 /*   By: jnkwelle <jnkwelle@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 11:29:04 by jnkwelle          #+#    #+#             */
-/*   Updated: 2024/05/27 17:19:56 by jnkwelle         ###   ########.fr       */
+/*   Updated: 2024/05/28 14:52:23 by jnkwelle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,7 @@ int	ft_put_unsignedint(int number)
 {
 	unsigned int	unsigned_num;
 
-	if (number < 0)
-		unsigned_num = (unsigned int)number;
-	else
-		unsigned_num = (unsigned int)number;
+	unsigned_num = (unsigned int)number;
 	if (ft_put_unsigned_int_recur(unsigned_num) == -1)
 		return (-1);
 	return (ft_get_size(number));

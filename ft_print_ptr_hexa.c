@@ -35,6 +35,12 @@ int	ft_put_ptr_hexa(void *ptr)
 	int					count;
 
 	address = (unsigned long long)ptr;
+	if (address == 0)
+	{
+		if (write(1, "(nil)", 5) == -1)
+			return (-1);
+		return (5);
+	}
 	if (write(1, "0x", 2) == -1)
 		return (-1);
 	count = 0;
